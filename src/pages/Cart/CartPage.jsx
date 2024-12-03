@@ -1,6 +1,6 @@
 import Cart from "../../components/Cart/Cart";
 
-const CartPage = () => {
+function CartPage ()  {
   return (
     <div>
       <Cart />

@@ -29,7 +29,7 @@ function Login() {
       await dispatch(login({ email, password }));
       toast.success(`Welcome back, ${email}!`);
       setTimeout(() => {
-        navigate('/product');
+        navigate('/');
       }, 2000); 
 
       setEmail('');
@@ -48,7 +48,7 @@ function Login() {
         <MDBRow>
           <MDBCol col="10" md="6">
             <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+              src="https://c4.wallpaperflare.com/wallpaper/950/726/427/clock-detail-jewelry-luxury-wallpaper-preview.jpg"
               className="img-fluid"
               alt="Phone"
             />

@@ -1,38 +1,37 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
-// Load cart items from localStorage, or default to an empty array
 const initialState = {
-  items: JSON.parse(localStorage.getItem('cartItems')) || [],
+  items: JSON.parse(localStorage.getItem("cartItems")) || [],
 };
 
 const cartSlice = createSlice({
-  name: 'cart',
+  name: "cart",
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      const existingItem = state.items.find(item => item.id === action.payload.id);
+      const existingItem = state.items.find(
+        (item) => item.id === action.payload.id
+      );
       if (existingItem) {
-        // If the item is already in the cart, increase its quantity
-        existingItem.quantity += 1;
+        existingItem.quantity += action.payload.quantity;
       } else {
-        // Add the item to the cart with quantity 1
-        state.items.push({ ...action.payload, quantity: 1 });
+        state.items.push({
+          ...action.payload,
+          quantity: action.payload.quantity,
+        });
       }
-      // Save updated cart to localStorage
-      localStorage.setItem('cartItems', JSON.stringify(state.items));
+      localStorage.setItem("cartItems", JSON.stringify(state.items));
     },
     removeFromCart: (state, action) => {
-      state.items = state.items.filter(item => item.id !== action.payload);
-      // Save updated cart to localStorage
-      localStorage.setItem('cartItems', JSON.stringify(state.items));
+      state.items = state.items.filter((item) => item.id !== action.payload);
+      localStorage.setItem("cartItems", JSON.stringify(state.items));
     },
     updateQuantity: (state, action) => {
       const { id, quantity } = action.payload;
-      const item = state.items.find(item => item.id === id);
+      const item = state.items.find((item) => item.id === id);
       if (item && quantity >= 1) {
         item.quantity = quantity;
-        // Save updated cart to localStorage
-        localStorage.setItem('cartItems', JSON.stringify(state.items));
+        localStorage.setItem("cartItems", JSON.stringify(state.items));
       }
     },
   },

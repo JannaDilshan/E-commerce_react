@@ -10,14 +10,14 @@ const authSlice = createSlice({
   initialState,
   reducers: {
     register: (state, action) => {
-      
-      state.user = action.payload;
-      localStorage.setItem('user', JSON.stringify(state.user)); 
+      const { firstName,lastName, email } = action.payload;
+      state.user = { firstName,lastName, email };
+      localStorage.setItem('user', JSON.stringify({ firstName,lastName, email }));
       state.status = 'Registration successful!';
     },
     login: (state, action) => {
       const { email, password } = action.payload;
-      if (email === 'janith@test.com' && password === 'password') {
+      if (email === 'test@gamil.com' && password === 'password') {
         state.user = { email };
         localStorage.setItem('user', JSON.stringify(state.user));
         state.status = 'Login successful!';

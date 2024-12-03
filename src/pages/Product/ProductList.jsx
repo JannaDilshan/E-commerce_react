@@ -4,7 +4,7 @@ import ProductCard from '../../components/ProductCard/ProductCard';
 import './ProductList.css';
 import { MDBPagination, MDBPaginationItem, MDBPaginationLink } from 'mdb-react-ui-kit';
 
-const ProductList = () => {
+function ProductList()  {
   const [searchTerm, setSearchTerm] = useState('');
   const [minPrice, setMinPrice] = useState('');
   const [maxPrice, setMaxPrice] = useState('');

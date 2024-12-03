@@ -3,7 +3,7 @@ import ProductCard from '../ProductCard/ProductCard';
 import './ProductList.css';
 
 
-const ProductList = () => {
+function ProductList() {
   const products = [
     {
       id: 1,
@@ -90,7 +90,7 @@ const ProductList = () => {
           </select>
         </div>
 
-        {/* Product List */}
+       
         <div className="product-list">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (

@@ -105,14 +105,14 @@ function footer() {
               <p>
                 <MDBIcon color="secondary" icon="envelope" className="me-3" />
                 <a
-                  href="mailto:janith@test.com"
+                  href="mailto:janithtk2000@gmail.com"
                   style={{
                     textDecoration: "none",
                     color: "#757575",
                     opacity: "1",
                   }}
                 >
-                  janith@test.com
+                  janithtk2000@gmail.com
                 </a>
               </p>
 
