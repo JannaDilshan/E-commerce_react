@@ -37,12 +37,15 @@ function Register(){
         .min(6, "Password must be at least 6 characters")
         .required("Password is required"),
     }),
+    
     onSubmit: (values, { resetForm }) => {
       try {
         dispatch(register(values));
         toast.success("Registration successful!");
+        setTimeout(() => {
         resetForm();
         navigate("/");
+      }, 2000);
       } catch (error) {
         toast.error(`Registration failed. Please try again. ${error.message}`);
       }

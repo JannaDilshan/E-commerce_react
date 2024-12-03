@@ -12,7 +12,7 @@ function ProductList()  {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 8;
 
-  // Get query parameters from the URL
+ 
   const location = useLocation();
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -167,7 +167,7 @@ function ProductList()  {
           )}
         </div>
   
-        {/* MDB Pagination */}
+       
         <nav aria-label="Page navigation">
           <MDBPagination className="mb-0 justify-content-center">
             <MDBPaginationItem disabled={currentPage === 1}>
