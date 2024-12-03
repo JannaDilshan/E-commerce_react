@@ -108,9 +108,6 @@ function Login() {
                     <MDBBtn tag="a" color="none" className="mx-3" style={{ color: '#1266f1' }}>
                       <MDBIcon fab icon="google" size="sm" />
                     </MDBBtn>
-                    <MDBBtn tag="a" color="none" className="mx-3" style={{ color: '#1266f1' }}>
-                      <MDBIcon fab icon="github" size="sm" />
-                    </MDBBtn>
                   </div>
             </div>
           </MDBCol>
