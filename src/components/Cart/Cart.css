@@ -80,6 +80,15 @@
   .cart-item .remove-btn {
     margin-left: 20px;
   }
+
+  .sticky-cart {
+    position: fixed;
+    top: 200px; 
+    right: 20px; 
+    width: 300px; 
+    
+  }
+
   
   /* Responsive Design for smaller screens */
   @media screen and (max-width: 768px) {
@@ -95,5 +104,10 @@
     .quantity-controls {
       justify-content: center;
     }
+    .sticky-cart {
+      position: static; 
+        width: 100%;
+        margin: 20px 0; 
+      }
   }
   
