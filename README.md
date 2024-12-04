@@ -24,14 +24,6 @@ Welcome to the **E-commerce React Application**! Built using **React** with **Vi
 - **Responsive Design**: Mobile-friendly and adaptive layout for seamless use across devices.
 
 ## 🛠️ Project Setup
-
-### 📋 Prerequisites
-
-Ensure you have the following installed on your machine:
-
-- **Node.js** (>=v14.0.0)
-- **npm** (>=v6.0.0) or **yarn** (>=v1.0.0)
-
 ---
 
 ### 🚀 Getting Started
