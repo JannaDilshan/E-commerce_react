@@ -125,6 +125,6 @@ If you have any questions, suggestions, or feedback, feel free to reach out to m
 
 - **Email**: [janithtk2000@gmail.com](mailto:janithtk2000@gmail.com)
 - **Contact Number**: [+94 754 967 408](tel:+94754967408)
-- **LinkedIn**: [https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/janith-dilshan-2566532aa)
+- **LinkedIn**: [https://www.linkedin.com/in/janith-dilshan-2566532aa ](https://www.linkedin.com/in/janith-dilshan-2566532aa)
 
 ---
