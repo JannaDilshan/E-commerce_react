@@ -10,6 +10,7 @@ import Home from "./pages/Home/Home";
 import NotFound from "./components/404Page/NotFound";
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
+import Thank from "./pages/ThankYou/thank";
 import './App.css';
 import { useSelector } from "react-redux";
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/register"  element={user ? <Navigate to="/" /> : <Register />} />
         <Route path="/products" element={<ProductList />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/thank-you" element={<Thank />} />
       </Routes>
       <Footer />
     </Router>

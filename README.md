@@ -67,7 +67,7 @@ This simple credential check is implemented in the App.jsx file for testing purp
 
    - Utilizes react-router-dom for navigation.
 
-   - Public routes (e.g.,/, /login, /register, /products, /cart) are separated from protected routes (e.g., redirecting logged-in users from /login, /register).
+   - Public routes (e.g.,/, /login, /register, /products, /cart , /thank-you) are separated from protected routes (e.g., redirecting logged-in users from /login, /register).
 
 2. ProductList Component
 
@@ -101,7 +101,7 @@ This simple credential check is implemented in the App.jsx file for testing purp
    ├── app/ # Store Redux slices and state management (e.g., authSlice.js,cartSlice.js)
    ├── components/ # Reusable components (e.g.,404page ,  ProductCard, Header, Footer, Cart,HomeProduct)
    ├── features/ # Features components (e.g.,authSlice.js,cartSlice.js)
-   ├── pages/ # Page components (e.g., Login, Register, ProductList, Cart, Home)
+   ├── pages/ # Page components (e.g., Login, Register, ProductList, Cart, Home,ThankYou)
    ├── App.jsx # Main application file
    🔍 Notes on Special Features
 
