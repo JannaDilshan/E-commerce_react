@@ -49,7 +49,7 @@ function Header() {
       <MDBContainer fluid>
         <MDBNavbarBrand>
           <img
-            src="/src/assets/e-com.png"
+            src="https://github.com/JannaDilshan/E-commerce_react/blob/main/src/assets/e-com.png?raw=true"
             height="70"
             alt="Logo"
             loading="lazy"

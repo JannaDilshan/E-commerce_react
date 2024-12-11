@@ -15,7 +15,7 @@ import './App.css';
 import { useSelector } from "react-redux";
 
 function App() {
-  // Get the user from Redux or localStorage (you can use either based on your state management)
+  
   const user = useSelector((state) => state.auth.user) || JSON.parse(localStorage.getItem('user'));
 
   return (
